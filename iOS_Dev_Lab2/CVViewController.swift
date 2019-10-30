@@ -9,9 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //@IBOutlet weak var presentationTextArea: UITextView!
     
     override func viewDidLoad() {
+        //presentationTextArea.isEditable = false
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
