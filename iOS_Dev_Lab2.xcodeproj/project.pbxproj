@@ -14,6 +14,8 @@
 		2B4116FF23699A7C0086DD18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4116FD23699A7C0086DD18 /* Main.storyboard */; };
 		2B41170123699A7D0086DD18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B41170023699A7D0086DD18 /* Assets.xcassets */; };
 		2B41170423699A7D0086DD18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B41170223699A7D0086DD18 /* LaunchScreen.storyboard */; };
+		2B4A1EBA236F424000D27BA5 /* LBSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A1EB9236F424000D27BA5 /* LBSViewController.swift */; };
+		2B4A1EBC236F424F00D27BA5 /* JUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A1EBB236F424F00D27BA5 /* JUViewController.swift */; };
 		2B8B7EF9236B82370046FE00 /* gameDeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B7EF8236B82370046FE00 /* gameDeveloperViewController.swift */; };
 		2B8B7EFB236B824A0046FE00 /* pilotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B7EFA236B824A0046FE00 /* pilotViewController.swift */; };
 		2B8B7EFD236B825D0046FE00 /* helloSayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B7EFC236B825D0046FE00 /* helloSayerViewController.swift */; };
@@ -29,6 +31,8 @@
 		2B41170023699A7D0086DD18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B41170323699A7D0086DD18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B41170523699A7D0086DD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4A1EB9236F424000D27BA5 /* LBSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSViewController.swift; sourceTree = "<group>"; };
+		2B4A1EBB236F424F00D27BA5 /* JUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JUViewController.swift; sourceTree = "<group>"; };
 		2B8B7EF8236B82370046FE00 /* gameDeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameDeveloperViewController.swift; sourceTree = "<group>"; };
 		2B8B7EFA236B824A0046FE00 /* pilotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pilotViewController.swift; sourceTree = "<group>"; };
 		2B8B7EFC236B825D0046FE00 /* helloSayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloSayerViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				2B8B7EF8236B82370046FE00 /* gameDeveloperViewController.swift */,
 				2B8B7EFA236B824A0046FE00 /* pilotViewController.swift */,
 				2B8B7EFC236B825D0046FE00 /* helloSayerViewController.swift */,
+				2B4A1EB9236F424000D27BA5 /* LBSViewController.swift */,
+				2B4A1EBB236F424F00D27BA5 /* JUViewController.swift */,
 			);
 			path = iOS_Dev_Lab2;
 			sourceTree = "<group>";
@@ -152,10 +158,12 @@
 			files = (
 				2B087068236A139B00FF975E /* experienceViewController.swift in Sources */,
 				2B8B7EF9236B82370046FE00 /* gameDeveloperViewController.swift in Sources */,
+				2B4A1EBA236F424000D27BA5 /* LBSViewController.swift in Sources */,
 				2B8B7EFD236B825D0046FE00 /* helloSayerViewController.swift in Sources */,
 				2B4116FC23699A7C0086DD18 /* ViewController.swift in Sources */,
 				2B4116F823699A7C0086DD18 /* AppDelegate.swift in Sources */,
 				2B4116FA23699A7C0086DD18 /* SceneDelegate.swift in Sources */,
+				2B4A1EBC236F424F00D27BA5 /* JUViewController.swift in Sources */,
 				2B8B7EFB236B824A0046FE00 /* pilotViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
