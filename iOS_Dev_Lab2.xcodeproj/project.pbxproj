@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B087068236A139B00FF975E /* experienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B087067236A139B00FF975E /* experienceViewController.swift */; };
 		2B4116F823699A7C0086DD18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4116F723699A7C0086DD18 /* AppDelegate.swift */; };
 		2B4116FA23699A7C0086DD18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4116F923699A7C0086DD18 /* SceneDelegate.swift */; };
 		2B4116FC23699A7C0086DD18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4116FB23699A7C0086DD18 /* ViewController.swift */; };
@@ -16,10 +15,10 @@
 		2B41170423699A7D0086DD18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B41170223699A7D0086DD18 /* LaunchScreen.storyboard */; };
 		2B8B4D2723702E1E00520276 /* DetailedExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B4D2623702E1E00520276 /* DetailedExperienceViewController.swift */; };
 		2B8B4D2923702E7A00520276 /* experienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B4D2823702E7A00520276 /* experienceCell.swift */; };
+		2B8B4D2B237031A300520276 /* experienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B4D2A237031A300520276 /* experienceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B087067236A139B00FF975E /* experienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experienceViewController.swift; sourceTree = "<group>"; };
 		2B4116F423699A7C0086DD18 /* iOS_Dev_Lab2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Dev_Lab2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4116F723699A7C0086DD18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B4116F923699A7C0086DD18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		2B41170523699A7D0086DD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B8B4D2623702E1E00520276 /* DetailedExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedExperienceViewController.swift; sourceTree = "<group>"; };
 		2B8B4D2823702E7A00520276 /* experienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experienceCell.swift; sourceTree = "<group>"; };
+		2B8B4D2A237031A300520276 /* experienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experienceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +69,9 @@
 				2B41170023699A7D0086DD18 /* Assets.xcassets */,
 				2B41170223699A7D0086DD18 /* LaunchScreen.storyboard */,
 				2B41170523699A7D0086DD18 /* Info.plist */,
-				2B087067236A139B00FF975E /* experienceViewController.swift */,
 				2B8B4D2623702E1E00520276 /* DetailedExperienceViewController.swift */,
 				2B8B4D2823702E7A00520276 /* experienceCell.swift */,
+				2B8B4D2A237031A300520276 /* experienceViewController.swift */,
 			);
 			path = iOS_Dev_Lab2;
 			sourceTree = "<group>";
@@ -147,9 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B087068236A139B00FF975E /* experienceViewController.swift in Sources */,
 				2B8B4D2923702E7A00520276 /* experienceCell.swift in Sources */,
 				2B4116FC23699A7C0086DD18 /* ViewController.swift in Sources */,
+				2B8B4D2B237031A300520276 /* experienceViewController.swift in Sources */,
 				2B4116F823699A7C0086DD18 /* AppDelegate.swift in Sources */,
 				2B4116FA23699A7C0086DD18 /* SceneDelegate.swift in Sources */,
 				2B8B4D2723702E1E00520276 /* DetailedExperienceViewController.swift in Sources */,

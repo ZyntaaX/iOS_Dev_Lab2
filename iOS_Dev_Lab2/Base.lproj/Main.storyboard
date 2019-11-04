@@ -120,7 +120,7 @@ CQk
         <!--Experience-->
         <scene sceneID="kFV-wa-dy2">
             <objects>
-                <tableViewController id="8T3-Mk-G37" sceneMemberID="viewController">
+                <tableViewController id="8T3-Mk-G37" customClass="experienceViewController" customModule="iOS_Dev_Lab2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ca6-wG-3yO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
