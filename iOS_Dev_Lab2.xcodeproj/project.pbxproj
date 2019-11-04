@@ -13,9 +13,9 @@
 		2B4116FF23699A7C0086DD18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4116FD23699A7C0086DD18 /* Main.storyboard */; };
 		2B41170123699A7D0086DD18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B41170023699A7D0086DD18 /* Assets.xcassets */; };
 		2B41170423699A7D0086DD18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B41170223699A7D0086DD18 /* LaunchScreen.storyboard */; };
-		2B8B4D2723702E1E00520276 /* DetailedExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B4D2623702E1E00520276 /* DetailedExperienceViewController.swift */; };
-		2B8B4D2923702E7A00520276 /* experienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B4D2823702E7A00520276 /* experienceCell.swift */; };
-		2B8B4D2B237031A300520276 /* experienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B4D2A237031A300520276 /* experienceViewController.swift */; };
+		3FA8CB22237068B800F05D02 /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA8CB21237068B800F05D02 /* ExperienceTableViewCell.swift */; };
+		3FA8CB26237069AB00F05D02 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA8CB25237069AB00F05D02 /* ExperienceViewController.swift */; };
+		3FA8CB2823706C4500F05D02 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA8CB2723706C4500F05D02 /* Work.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		2B41170023699A7D0086DD18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B41170323699A7D0086DD18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B41170523699A7D0086DD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B8B4D2623702E1E00520276 /* DetailedExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedExperienceViewController.swift; sourceTree = "<group>"; };
-		2B8B4D2823702E7A00520276 /* experienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experienceCell.swift; sourceTree = "<group>"; };
-		2B8B4D2A237031A300520276 /* experienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experienceViewController.swift; sourceTree = "<group>"; };
+		3FA8CB21237068B800F05D02 /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
+		3FA8CB25237069AB00F05D02 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		3FA8CB2723706C4500F05D02 /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +69,9 @@
 				2B41170023699A7D0086DD18 /* Assets.xcassets */,
 				2B41170223699A7D0086DD18 /* LaunchScreen.storyboard */,
 				2B41170523699A7D0086DD18 /* Info.plist */,
-				2B8B4D2623702E1E00520276 /* DetailedExperienceViewController.swift */,
-				2B8B4D2823702E7A00520276 /* experienceCell.swift */,
-				2B8B4D2A237031A300520276 /* experienceViewController.swift */,
+				3FA8CB21237068B800F05D02 /* ExperienceTableViewCell.swift */,
+				3FA8CB25237069AB00F05D02 /* ExperienceViewController.swift */,
+				3FA8CB2723706C4500F05D02 /* Work.swift */,
 			);
 			path = iOS_Dev_Lab2;
 			sourceTree = "<group>";
@@ -147,12 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B8B4D2923702E7A00520276 /* experienceCell.swift in Sources */,
+				3FA8CB26237069AB00F05D02 /* ExperienceViewController.swift in Sources */,
 				2B4116FC23699A7C0086DD18 /* ViewController.swift in Sources */,
-				2B8B4D2B237031A300520276 /* experienceViewController.swift in Sources */,
+				3FA8CB2823706C4500F05D02 /* Work.swift in Sources */,
+				3FA8CB22237068B800F05D02 /* ExperienceTableViewCell.swift in Sources */,
 				2B4116F823699A7C0086DD18 /* AppDelegate.swift in Sources */,
 				2B4116FA23699A7C0086DD18 /* SceneDelegate.swift in Sources */,
-				2B8B4D2723702E1E00520276 /* DetailedExperienceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOS_Dev_Lab2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOS_Dev_Lab2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
