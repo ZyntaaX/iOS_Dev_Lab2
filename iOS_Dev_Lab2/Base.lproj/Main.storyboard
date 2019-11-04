@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ehE-Il-Y24">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ehE-Il-Y24">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kkn-FC-VZh" kind="show" id="WgT-7I-IMu"/>
+                                    <segue destination="8T3-Mk-G37" kind="show" id="bat-4Q-CBe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCS-Kk-ESw">
@@ -118,276 +118,74 @@ CQk
             <point key="canvasLocation" x="1179.7101449275362" y="18.75"/>
         </scene>
         <!--Experience-->
-        <scene sceneID="jN8-Me-9b0">
+        <scene sceneID="kFV-wa-dy2">
             <objects>
-                <tableViewController id="kkn-FC-VZh" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2bM-EC-oBp">
+                <tableViewController id="8T3-Mk-G37" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ca6-wG-3yO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <sections>
-                            <tableViewSection headerTitle="Work" id="5Ok-Nc-adz">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kRQ-WB-K3w">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kRQ-WB-K3w" id="CKn-iQ-eOt">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="99" id="XhE-Df-xzx" customClass="experienceCell" customModule="iOS_Dev_Lab2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="99"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XhE-Df-xzx" id="4C5-I8-Y3h">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tl7-sR-OWK">
+                                            <rect key="frame" x="20" y="11" width="127" height="77"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="77" id="IOL-PK-BDN"/>
+                                                <constraint firstAttribute="width" constant="127" id="hGg-B5-qFc"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UlJ-jJ-adh">
+                                            <rect key="frame" x="155" y="11" width="239" height="77"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gamecontroller" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ls0-fL-1Tx">
-                                                    <rect key="frame" x="20" y="0.0" width="83" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2015 - Ongoing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEV-lR-g2F">
-                                                    <rect key="frame" x="111" y="23" width="120" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMb-cC-AXm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="239" height="56.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPJ-sZ-N8A">
-                                                    <rect key="frame" x="111" y="0.0" width="126" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQf-G4-VZ3">
+                                                    <rect key="frame" x="0.0" y="56.666666666666679" width="239" height="20.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </label>
                                             </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="2ln-se-yAf" kind="show" id="HnQ-Pk-NG6"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cBH-VR-X24">
-                                        <rect key="frame" x="0.0" y="72" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cBH-VR-X24" id="JDQ-YT-ti0">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tray" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="d5b-EC-HE8">
-                                                    <rect key="frame" x="20" y="0.0" width="83" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2012 - 2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ur9-Mu-wwg">
-                                                    <rect key="frame" x="111" y="23" width="92" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Experienced &quot;Hello&quot;-sayer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6W-rt-9op">
-                                                    <rect key="frame" x="111" y="0.0" width="201" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="5dn-zp-IEY" kind="show" id="nvO-qe-aEY"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6Tv-5v-Y7t">
-                                        <rect key="frame" x="0.0" y="116" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Tv-5v-Y7t" id="SPG-4D-X92">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="airplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-Eb-nJP">
-                                                    <rect key="frame" x="20" y="0.0" width="83" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2008 - 2012" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tm1-TF-rwW">
-                                                    <rect key="frame" x="111" y="23" width="96" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pilot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttm-on-FlD">
-                                                    <rect key="frame" x="111" y="0.0" width="34" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="j7g-6c-DVz" kind="show" id="HYJ-2E-gCE"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Education" id="R8u-9c-wtF">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bmi-2c-w05">
-                                        <rect key="frame" x="0.0" y="216" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bmi-2c-w05" id="oId-yT-OWr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3NN-jI-mNS">
-                                                    <rect key="frame" x="20" y="0.0" width="83" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2018 - Ongoing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1x-Ea-wIO">
-                                                    <rect key="frame" x="111" y="23" width="120" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jönköping University" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPR-SI-Qip">
-                                                    <rect key="frame" x="111" y="0.0" width="160" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="fkY-0T-iWv" kind="show" id="gMc-mX-fvw"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Tvr-lh-wGR">
-                                        <rect key="frame" x="0.0" y="260" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tvr-lh-wGR" id="R6Z-pu-IRt">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GmO-qB-hoE">
-                                                    <rect key="frame" x="20" y="0.0" width="83" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2013 - 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncd-ih-lvh">
-                                                    <rect key="frame" x="111" y="23" width="93" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LBS Gymnasium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EH7-Qy-IFL">
-                                                    <rect key="frame" x="111" y="0.0" width="126" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="lK4-8o-iBM" kind="show" id="Jy8-Y9-kyg"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="UlJ-jJ-adh" firstAttribute="trailing" secondItem="4C5-I8-Y3h" secondAttribute="trailingMargin" id="9hk-Rc-RSm"/>
+                                        <constraint firstItem="UlJ-jJ-adh" firstAttribute="bottom" secondItem="4C5-I8-Y3h" secondAttribute="bottomMargin" id="S4r-FJ-k7k"/>
+                                        <constraint firstItem="UlJ-jJ-adh" firstAttribute="leading" secondItem="Tl7-sR-OWK" secondAttribute="trailing" constant="8" id="Uja-Br-cTy"/>
+                                        <constraint firstItem="Tl7-sR-OWK" firstAttribute="leading" secondItem="4C5-I8-Y3h" secondAttribute="leadingMargin" id="VcP-II-xMe"/>
+                                        <constraint firstItem="Tl7-sR-OWK" firstAttribute="top" secondItem="4C5-I8-Y3h" secondAttribute="topMargin" id="ewf-FP-8B7"/>
+                                        <constraint firstItem="Tl7-sR-OWK" firstAttribute="bottom" secondItem="4C5-I8-Y3h" secondAttribute="bottomMargin" id="jft-AN-Lmd"/>
+                                        <constraint firstItem="UlJ-jJ-adh" firstAttribute="top" secondItem="4C5-I8-Y3h" secondAttribute="topMargin" id="pTI-Wv-dCL"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellImage" destination="Tl7-sR-OWK" id="k4j-tA-VoE"/>
+                                    <outlet property="date" destination="RQf-G4-VZ3" id="I3J-oH-Z9R"/>
+                                    <outlet property="image" destination="Tl7-sR-OWK" id="6kr-SQ-XXO"/>
+                                    <outlet property="title" destination="ZMb-cC-AXm" id="wra-UT-5zA"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="kkn-FC-VZh" id="WCf-YR-nR2"/>
-                            <outlet property="delegate" destination="kkn-FC-VZh" id="fUC-tX-se2"/>
+                            <outlet property="dataSource" destination="8T3-Mk-G37" id="Q22-HL-ipQ"/>
+                            <outlet property="delegate" destination="8T3-Mk-G37" id="KWf-Yu-kQU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Experience" id="z75-5b-qvV"/>
+                    <navigationItem key="navigationItem" title="Experience" id="EfB-Jc-py6"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gDa-HM-4Ah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Lj-Fi-wGI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2063.768115942029" y="18.75"/>
-        </scene>
-        <!--Game Developer-->
-        <scene sceneID="KSf-2u-JGu">
-            <objects>
-                <viewController id="2ln-se-yAf" customClass="gameDeveloperViewController" customModule="iOS_Dev_Lab2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bp4-9e-kdI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamecontroller.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GOY-0V-g4n">
-                                <rect key="frame" x="20" y="89.666666666666657" width="180" height="93"/>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="6CA-Af-pZE"/>
-                                    <constraint firstAttribute="width" constant="180" id="8ax-bM-Q6e"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I9A-pE-8pB">
-                                <rect key="frame" x="20" y="194" width="374" height="668"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget maximus ex. Pellentesque finibus scelerisque nulla, ac egestas mi tempus vitae. Maecenas iaculis ornare metus, eget hendrerit orci tempor et. Quisque quis porta diam. Integer rutrum, sapien et finibus posuere, tortor tortor blandit lectus, quis pellentesque eros mi ut libero. Donec arcu elit, feugiat a nulla eget, luctus mollis mauris. Donec nec viverra est. Maecenas sed nisl ullamcorper, malesuada ligula eu, placerat velit. Nulla leo est, hendrerit vel vehicula sed, scelerisque ut quam. Donec nulla metus, condimentum sed tellus vel, vulputate varius libero. Morbi sed eleifend metus. Pellentesque est augue, commodo egestas neque at, euismod ultrices dui. Aliquam erat volutpat. Donec et vehicula odio, et varius sapien. Morbi luctus eu tortor eget iaculis.
-
-Curabitur eget lacus aliquet, auctor justo pharetra, pulvinar orci. Aliquam quis libero nisl. Nunc in orci sit amet urna gravida porta. Ut efficitur augue at efficitur finibus. Nunc in volutpat odio, a viverra neque. Aenean massa nibh, maximus eget tincidunt vel, posuere a diam. Quisque semper pretium nibh at molestie. Duis rhoncus enim a vehicula tincidunt. Sed nisi dui, sollicitudin vitae velit at, molestie tincidunt arcu. Sed eget diam vitae nulla molestie ultricies. Phasellus nec gravida orci. Cras ac neque at felis volutpat sodales vel eget eros. Pellentesque maximus vitae arcu sed finibus.
-
-Praesent aliquet posuere bibendum. Quisque vitae tortor imperdiet felis laoreet efficitur. Integer nibh odio, blandit eu pretium in, faucibus in augue. Vestibulum non metus lobortis, rutrum urna sed, lobortis lectus. Curabitur nec metus erat. Integer est est, porta non interdum at, volutpat sed risus. In hac habitasse platea dictumst. Nulla consequat commodo enim non dignissim. Curabitur ac porta dui.
-
-Donec et est nec ipsum vestibulum sodales. Proin sed dui nec dui aliquam tristique in ut sem. Donec vel fermentum purus. Phasellus faucibus ultrices purus a ornare. Mauris in ante non lacus eleifend aliquet. Cras ultrices massa non dignissim tempor. Curabitur sed libero eu sem porttitor maximus. Proin turpis elit, vulputate vel leo eget, efficitur malesuada augue. Morbi at elementum eros. Maecenas gravida nisl ultrices consectetur consequat. Etiam ullamcorper purus dictum, tincidunt purus vulputate, maximus neque. Mauris ultrices elit eget sapien iaculis placerat at aliquam tellus. Nullam in tincidunt metus, nec imperdiet ipsum. Morbi nec porta elit, vel fermentum purus. Pellentesque arcu eros, eleifend eu dapibus non, euismod id nunc. Donec vestibulum lectus quis augue commodo porta.
-
-Aenean rhoncus, ex ac faucibus cursus, ex ante tristique erat, maximus rutrum mauris nisl sed odio. Nulla nec vestibulum diam, quis ultricies turpis. Duis ultricies libero id massa volutpat, sodales ultrices purus commodo. Curabitur mollis hendrerit maximus. Curabitur blandit id mi quis maximus. Pellentesque nec arcu elementum justo elementum suscipit. Morbi lacinia at risus nec auctor. Nullam vehicula consequat molestie. Duis tristique enim eu sapien feugiat maximus a ac odio. Phasellus ullamcorper et odio suscipit pellentesque. Donec eget posuere dui. Nam feugiat, urna in molestie blandit, libero massa efficitur eros, ac tincidunt justo velit malesuada ex. Etiam vel interdum mauris. Morbi egestas vel purus quis efficitur. Nam quis ornare tellus, non blandit lacus.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PK4-P5-Oct">
-                                <rect key="frame" x="208" y="100" width="128" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ba-nJ-tNL">
-                                <rect key="frame" x="208" y="122.99999999999999" width="38" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015 - Ongoing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLk-wj-1c6">
-                                <rect key="frame" x="208" y="144.33333333333334" width="120" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="I9A-pE-8pB" firstAttribute="top" secondItem="GOY-0V-g4n" secondAttribute="bottom" constant="10" id="3gO-t8-YtQ"/>
-                            <constraint firstItem="GOY-0V-g4n" firstAttribute="top" secondItem="bp4-9e-kdI" secondAttribute="topMargin" id="7Xd-Qq-Ezu"/>
-                            <constraint firstItem="PK4-P5-Oct" firstAttribute="leading" secondItem="GOY-0V-g4n" secondAttribute="trailing" constant="8" id="8uh-w4-dYd"/>
-                            <constraint firstItem="1VP-Gk-5yI" firstAttribute="trailing" secondItem="I9A-pE-8pB" secondAttribute="trailing" constant="20" id="Gag-7u-9AA"/>
-                            <constraint firstItem="gLk-wj-1c6" firstAttribute="top" secondItem="6Ba-nJ-tNL" secondAttribute="bottom" constant="1" id="M9z-Ll-ays"/>
-                            <constraint firstItem="GOY-0V-g4n" firstAttribute="leading" secondItem="1VP-Gk-5yI" secondAttribute="leading" constant="20" id="T8T-PX-iQo"/>
-                            <constraint firstItem="I9A-pE-8pB" firstAttribute="leading" secondItem="1VP-Gk-5yI" secondAttribute="leading" constant="20" id="Uih-TJ-v8W"/>
-                            <constraint firstItem="I9A-pE-8pB" firstAttribute="bottom" secondItem="1VP-Gk-5yI" secondAttribute="bottom" id="VaQ-wq-QB0"/>
-                            <constraint firstItem="6Ba-nJ-tNL" firstAttribute="leading" secondItem="GOY-0V-g4n" secondAttribute="trailing" constant="8" id="bbF-vE-mgx"/>
-                            <constraint firstItem="6Ba-nJ-tNL" firstAttribute="top" secondItem="PK4-P5-Oct" secondAttribute="bottom" constant="1" id="dfG-OL-8eg"/>
-                            <constraint firstItem="PK4-P5-Oct" firstAttribute="top" secondItem="1VP-Gk-5yI" secondAttribute="top" constant="12" id="rMk-aW-2XW"/>
-                            <constraint firstItem="gLk-wj-1c6" firstAttribute="leading" secondItem="GOY-0V-g4n" secondAttribute="trailing" constant="8" id="vZ4-ht-htl"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="1VP-Gk-5yI"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Game Developer" id="vy7-Js-i6i"/>
-                    <connections>
-                        <outlet property="textView" destination="I9A-pE-8pB" id="bV3-72-P37"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mk7-kY-hfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3686" y="-1229"/>
+            <point key="canvasLocation" x="2184.057971014493" y="18.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K3P-cw-pul">
@@ -407,327 +205,8 @@ Aenean rhoncus, ex ac faucibus cursus, ex ante tristique erat, maximus rutrum ma
             </objects>
             <point key="canvasLocation" x="269.56521739130437" y="18.75"/>
         </scene>
-        <!--Hello-sayer-->
-        <scene sceneID="oEO-pF-j3B">
-            <objects>
-                <viewController id="5dn-zp-IEY" userLabel="Hello-sayer" customClass="helloSayerViewController" customModule="iOS_Dev_Lab2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iXz-Eb-ZCL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tray.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YmX-Hj-Ye5">
-                                <rect key="frame" x="20" y="90" width="180" height="92"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="5Im-GR-XYs"/>
-                                    <constraint firstAttribute="width" constant="180" id="crA-bz-DUu"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NUD-rP-rca">
-                                <rect key="frame" x="20" y="194" width="374" height="668"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget maximus ex. Pellentesque finibus scelerisque nulla, ac egestas mi tempus vitae. Maecenas iaculis ornare metus, eget hendrerit orci tempor et. Quisque quis porta diam. Integer rutrum, sapien et finibus posuere, tortor tortor blandit lectus, quis pellentesque eros mi ut libero. Donec arcu elit, feugiat a nulla eget, luctus mollis mauris. Donec nec viverra est. Maecenas sed nisl ullamcorper, malesuada ligula eu, placerat velit. Nulla leo est, hendrerit vel vehicula sed, scelerisque ut quam. Donec nulla metus, condimentum sed tellus vel, vulputate varius libero. Morbi sed eleifend metus. Pellentesque est augue, commodo egestas neque at, euismod ultrices dui. Aliquam erat volutpat. Donec et vehicula odio, et varius sapien. Morbi luctus eu tortor eget iaculis.
-
-Curabitur eget lacus aliquet, auctor justo pharetra, pulvinar orci. Aliquam quis libero nisl. Nunc in orci sit amet urna gravida porta. Ut efficitur augue at efficitur finibus. Nunc in volutpat odio, a viverra neque. Aenean massa nibh, maximus eget tincidunt vel, posuere a diam. Quisque semper pretium nibh at molestie. Duis rhoncus enim a vehicula tincidunt. Sed nisi dui, sollicitudin vitae velit at, molestie tincidunt arcu. Sed eget diam vitae nulla molestie ultricies. Phasellus nec gravida orci. Cras ac neque at felis volutpat sodales vel eget eros. Pellentesque maximus vitae arcu sed finibus.
-
-Praesent aliquet posuere bibendum. Quisque vitae tortor imperdiet felis laoreet efficitur. Integer nibh odio, blandit eu pretium in, faucibus in augue. Vestibulum non metus lobortis, rutrum urna sed, lobortis lectus. Curabitur nec metus erat. Integer est est, porta non interdum at, volutpat sed risus. In hac habitasse platea dictumst. Nulla consequat commodo enim non dignissim. Curabitur ac porta dui.
-
-Donec et est nec ipsum vestibulum sodales. Proin sed dui nec dui aliquam tristique in ut sem. Donec vel fermentum purus. Phasellus faucibus ultrices purus a ornare. Mauris in ante non lacus eleifend aliquet. Cras ultrices massa non dignissim tempor. Curabitur sed libero eu sem porttitor maximus. Proin turpis elit, vulputate vel leo eget, efficitur malesuada augue. Morbi at elementum eros. Maecenas gravida nisl ultrices consectetur consequat. Etiam ullamcorper purus dictum, tincidunt purus vulputate, maximus neque. Mauris ultrices elit eget sapien iaculis placerat at aliquam tellus. Nullam in tincidunt metus, nec imperdiet ipsum. Morbi nec porta elit, vel fermentum purus. Pellentesque arcu eros, eleifend eu dapibus non, euismod id nunc. Donec vestibulum lectus quis augue commodo porta.
-
-Aenean rhoncus, ex ac faucibus cursus, ex ante tristique erat, maximus rutrum mauris nisl sed odio. Nulla nec vestibulum diam, quis ultricies turpis. Duis ultricies libero id massa volutpat, sodales ultrices purus commodo. Curabitur mollis hendrerit maximus. Curabitur blandit id mi quis maximus. Pellentesque nec arcu elementum justo elementum suscipit. Morbi lacinia at risus nec auctor. Nullam vehicula consequat molestie. Duis tristique enim eu sapien feugiat maximus a ac odio. Phasellus ullamcorper et odio suscipit pellentesque. Donec eget posuere dui. Nam feugiat, urna in molestie blandit, libero massa efficitur eros, ac tincidunt justo velit malesuada ex. Etiam vel interdum mauris. Morbi egestas vel purus quis efficitur. Nam quis ornare tellus, non blandit lacus.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Hello&quot;-sayer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2E-Az-ZtW">
-                                <rect key="frame" x="208" y="100" width="102" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello AB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsW-do-ANq">
-                                <rect key="frame" x="208" y="123" width="66" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2012 - 2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfM-T2-Xef">
-                                <rect key="frame" x="208" y="145" width="92" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="HsW-do-ANq" firstAttribute="leading" secondItem="YmX-Hj-Ye5" secondAttribute="trailing" constant="8" id="2IS-j0-QEg"/>
-                            <constraint firstItem="NUD-rP-rca" firstAttribute="top" secondItem="YmX-Hj-Ye5" secondAttribute="bottom" constant="10" id="5CV-aH-Lpx"/>
-                            <constraint firstItem="YmX-Hj-Ye5" firstAttribute="leading" secondItem="sad-Wg-MrX" secondAttribute="leading" constant="20" id="KPA-D9-Iwu"/>
-                            <constraint firstItem="HsW-do-ANq" firstAttribute="top" secondItem="e2E-Az-ZtW" secondAttribute="bottom" constant="1" id="MMG-DJ-heI"/>
-                            <constraint firstItem="e2E-Az-ZtW" firstAttribute="leading" secondItem="YmX-Hj-Ye5" secondAttribute="trailing" constant="8" id="OKk-8R-a8N"/>
-                            <constraint firstItem="NUD-rP-rca" firstAttribute="bottom" secondItem="sad-Wg-MrX" secondAttribute="bottom" id="Rwv-Bi-AfR"/>
-                            <constraint firstItem="e2E-Az-ZtW" firstAttribute="top" secondItem="sad-Wg-MrX" secondAttribute="top" constant="12" id="Vch-5j-Z6J"/>
-                            <constraint firstItem="kfM-T2-Xef" firstAttribute="leading" secondItem="YmX-Hj-Ye5" secondAttribute="trailing" constant="8" id="eF0-Qa-Rte"/>
-                            <constraint firstItem="kfM-T2-Xef" firstAttribute="top" secondItem="HsW-do-ANq" secondAttribute="bottom" constant="1" id="kyM-TO-3Kb"/>
-                            <constraint firstItem="YmX-Hj-Ye5" firstAttribute="top" secondItem="iXz-Eb-ZCL" secondAttribute="topMargin" id="mei-qn-wIq"/>
-                            <constraint firstItem="sad-Wg-MrX" firstAttribute="trailing" secondItem="NUD-rP-rca" secondAttribute="trailing" constant="20" id="w6e-7e-9Nb"/>
-                            <constraint firstItem="NUD-rP-rca" firstAttribute="leading" secondItem="sad-Wg-MrX" secondAttribute="leading" constant="20" id="xfL-Ba-0db"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="sad-Wg-MrX"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="&quot;Hello&quot;-sayer" id="6qA-dY-hcb"/>
-                    <connections>
-                        <outlet property="textView" destination="NUD-rP-rca" id="9hL-QA-WSY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bI4-om-CZj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3686" y="-523"/>
-        </scene>
-        <!--Pilot-->
-        <scene sceneID="kaD-Y8-aT0">
-            <objects>
-                <viewController id="j7g-6c-DVz" customClass="pilotViewController" customModule="iOS_Dev_Lab2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nqW-R5-cej">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iK6-uL-AAK">
-                                <rect key="frame" x="20" y="89" width="180" height="94.666666666666671"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="3Pn-6Q-F1P"/>
-                                    <constraint firstAttribute="height" constant="96" id="mj3-Gd-Pn3"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hob-Ci-CYa">
-                                <rect key="frame" x="20" y="194" width="374" height="668"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget maximus ex. Pellentesque finibus scelerisque nulla, ac egestas mi tempus vitae. Maecenas iaculis ornare metus, eget hendrerit orci tempor et. Quisque quis porta diam. Integer rutrum, sapien et finibus posuere, tortor tortor blandit lectus, quis pellentesque eros mi ut libero. Donec arcu elit, feugiat a nulla eget, luctus mollis mauris. Donec nec viverra est. Maecenas sed nisl ullamcorper, malesuada ligula eu, placerat velit. Nulla leo est, hendrerit vel vehicula sed, scelerisque ut quam. Donec nulla metus, condimentum sed tellus vel, vulputate varius libero. Morbi sed eleifend metus. Pellentesque est augue, commodo egestas neque at, euismod ultrices dui. Aliquam erat volutpat. Donec et vehicula odio, et varius sapien. Morbi luctus eu tortor eget iaculis.
-
-Curabitur eget lacus aliquet, auctor justo pharetra, pulvinar orci. Aliquam quis libero nisl. Nunc in orci sit amet urna gravida porta. Ut efficitur augue at efficitur finibus. Nunc in volutpat odio, a viverra neque. Aenean massa nibh, maximus eget tincidunt vel, posuere a diam. Quisque semper pretium nibh at molestie. Duis rhoncus enim a vehicula tincidunt. Sed nisi dui, sollicitudin vitae velit at, molestie tincidunt arcu. Sed eget diam vitae nulla molestie ultricies. Phasellus nec gravida orci. Cras ac neque at felis volutpat sodales vel eget eros. Pellentesque maximus vitae arcu sed finibus.
-
-Praesent aliquet posuere bibendum. Quisque vitae tortor imperdiet felis laoreet efficitur. Integer nibh odio, blandit eu pretium in, faucibus in augue. Vestibulum non metus lobortis, rutrum urna sed, lobortis lectus. Curabitur nec metus erat. Integer est est, porta non interdum at, volutpat sed risus. In hac habitasse platea dictumst. Nulla consequat commodo enim non dignissim. Curabitur ac porta dui.
-
-Donec et est nec ipsum vestibulum sodales. Proin sed dui nec dui aliquam tristique in ut sem. Donec vel fermentum purus. Phasellus faucibus ultrices purus a ornare. Mauris in ante non lacus eleifend aliquet. Cras ultrices massa non dignissim tempor. Curabitur sed libero eu sem porttitor maximus. Proin turpis elit, vulputate vel leo eget, efficitur malesuada augue. Morbi at elementum eros. Maecenas gravida nisl ultrices consectetur consequat. Etiam ullamcorper purus dictum, tincidunt purus vulputate, maximus neque. Mauris ultrices elit eget sapien iaculis placerat at aliquam tellus. Nullam in tincidunt metus, nec imperdiet ipsum. Morbi nec porta elit, vel fermentum purus. Pellentesque arcu eros, eleifend eu dapibus non, euismod id nunc. Donec vestibulum lectus quis augue commodo porta.
-
-Aenean rhoncus, ex ac faucibus cursus, ex ante tristique erat, maximus rutrum mauris nisl sed odio. Nulla nec vestibulum diam, quis ultricies turpis. Duis ultricies libero id massa volutpat, sodales ultrices purus commodo. Curabitur mollis hendrerit maximus. Curabitur blandit id mi quis maximus. Pellentesque nec arcu elementum justo elementum suscipit. Morbi lacinia at risus nec auctor. Nullam vehicula consequat molestie. Duis tristique enim eu sapien feugiat maximus a ac odio. Phasellus ullamcorper et odio suscipit pellentesque. Donec eget posuere dui. Nam feugiat, urna in molestie blandit, libero massa efficitur eros, ac tincidunt justo velit malesuada ex. Etiam vel interdum mauris. Morbi egestas vel purus quis efficitur. Nam quis ornare tellus, non blandit lacus.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pilot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ka-RM-ahe">
-                                <rect key="frame" x="208" y="100" width="34" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai Airways" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwn-2A-baZ">
-                                <rect key="frame" x="208" y="123" width="97" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2008 - 2012" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOj-eA-L3n">
-                                <rect key="frame" x="208" y="145" width="96" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="6ka-RM-ahe" firstAttribute="top" secondItem="ugY-Jv-0Na" secondAttribute="top" constant="12" id="BE5-fY-DTS"/>
-                            <constraint firstItem="hob-Ci-CYa" firstAttribute="leading" secondItem="ugY-Jv-0Na" secondAttribute="leading" constant="20" id="Hbz-8a-nbG"/>
-                            <constraint firstItem="Iwn-2A-baZ" firstAttribute="top" secondItem="6ka-RM-ahe" secondAttribute="bottom" constant="1" id="IhJ-T9-2DF"/>
-                            <constraint firstItem="iK6-uL-AAK" firstAttribute="leading" secondItem="ugY-Jv-0Na" secondAttribute="leading" constant="20" id="VZI-Ev-mLq"/>
-                            <constraint firstItem="ugY-Jv-0Na" firstAttribute="trailing" secondItem="hob-Ci-CYa" secondAttribute="trailing" constant="20" id="Y0p-Ok-mzF"/>
-                            <constraint firstItem="FOj-eA-L3n" firstAttribute="top" secondItem="Iwn-2A-baZ" secondAttribute="bottom" constant="1" id="YYD-jM-7Lu"/>
-                            <constraint firstItem="FOj-eA-L3n" firstAttribute="leading" secondItem="iK6-uL-AAK" secondAttribute="trailing" constant="8" id="Yzp-pg-I67"/>
-                            <constraint firstItem="6ka-RM-ahe" firstAttribute="leading" secondItem="iK6-uL-AAK" secondAttribute="trailing" constant="8" id="cHT-dl-q6O"/>
-                            <constraint firstItem="hob-Ci-CYa" firstAttribute="top" secondItem="iK6-uL-AAK" secondAttribute="bottom" constant="10" id="fKd-ca-khT"/>
-                            <constraint firstItem="Iwn-2A-baZ" firstAttribute="leading" secondItem="iK6-uL-AAK" secondAttribute="trailing" constant="8" id="gdJ-EL-khr"/>
-                            <constraint firstItem="hob-Ci-CYa" firstAttribute="bottom" secondItem="ugY-Jv-0Na" secondAttribute="bottom" id="j0Q-5C-xJs"/>
-                            <constraint firstItem="iK6-uL-AAK" firstAttribute="top" secondItem="nqW-R5-cej" secondAttribute="topMargin" id="ply-in-Vg6"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ugY-Jv-0Na"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Pilot" id="chI-sc-TgU"/>
-                    <connections>
-                        <outlet property="textView" destination="hob-Ci-CYa" id="72t-7d-1tt"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qdi-PN-DnS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3686" y="1539"/>
-        </scene>
-        <!--Jönköping University-->
-        <scene sceneID="Ktv-Jj-luU">
-            <objects>
-                <viewController id="fkY-0T-iWv" customClass="JUViewController" customModule="iOS_Dev_Lab2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="p3b-mn-3fa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ca9-cV-1lt">
-                                <rect key="frame" x="20" y="90" width="180" height="92.333333333333329"/>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="7KC-j5-gff"/>
-                                    <constraint firstAttribute="height" constant="96" id="jQi-cY-ti0"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="10g-5e-NSY">
-                                <rect key="frame" x="20" y="194" width="374" height="668"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget maximus ex. Pellentesque finibus scelerisque nulla, ac egestas mi tempus vitae. Maecenas iaculis ornare metus, eget hendrerit orci tempor et. Quisque quis porta diam. Integer rutrum, sapien et finibus posuere, tortor tortor blandit lectus, quis pellentesque eros mi ut libero. Donec arcu elit, feugiat a nulla eget, luctus mollis mauris. Donec nec viverra est. Maecenas sed nisl ullamcorper, malesuada ligula eu, placerat velit. Nulla leo est, hendrerit vel vehicula sed, scelerisque ut quam. Donec nulla metus, condimentum sed tellus vel, vulputate varius libero. Morbi sed eleifend metus. Pellentesque est augue, commodo egestas neque at, euismod ultrices dui. Aliquam erat volutpat. Donec et vehicula odio, et varius sapien. Morbi luctus eu tortor eget iaculis.
-
-Curabitur eget lacus aliquet, auctor justo pharetra, pulvinar orci. Aliquam quis libero nisl. Nunc in orci sit amet urna gravida porta. Ut efficitur augue at efficitur finibus. Nunc in volutpat odio, a viverra neque. Aenean massa nibh, maximus eget tincidunt vel, posuere a diam. Quisque semper pretium nibh at molestie. Duis rhoncus enim a vehicula tincidunt. Sed nisi dui, sollicitudin vitae velit at, molestie tincidunt arcu. Sed eget diam vitae nulla molestie ultricies. Phasellus nec gravida orci. Cras ac neque at felis volutpat sodales vel eget eros. Pellentesque maximus vitae arcu sed finibus.
-
-Praesent aliquet posuere bibendum. Quisque vitae tortor imperdiet felis laoreet efficitur. Integer nibh odio, blandit eu pretium in, faucibus in augue. Vestibulum non metus lobortis, rutrum urna sed, lobortis lectus. Curabitur nec metus erat. Integer est est, porta non interdum at, volutpat sed risus. In hac habitasse platea dictumst. Nulla consequat commodo enim non dignissim. Curabitur ac porta dui.
-
-Donec et est nec ipsum vestibulum sodales. Proin sed dui nec dui aliquam tristique in ut sem. Donec vel fermentum purus. Phasellus faucibus ultrices purus a ornare. Mauris in ante non lacus eleifend aliquet. Cras ultrices massa non dignissim tempor. Curabitur sed libero eu sem porttitor maximus. Proin turpis elit, vulputate vel leo eget, efficitur malesuada augue. Morbi at elementum eros. Maecenas gravida nisl ultrices consectetur consequat. Etiam ullamcorper purus dictum, tincidunt purus vulputate, maximus neque. Mauris ultrices elit eget sapien iaculis placerat at aliquam tellus. Nullam in tincidunt metus, nec imperdiet ipsum. Morbi nec porta elit, vel fermentum purus. Pellentesque arcu eros, eleifend eu dapibus non, euismod id nunc. Donec vestibulum lectus quis augue commodo porta.
-
-Aenean rhoncus, ex ac faucibus cursus, ex ante tristique erat, maximus rutrum mauris nisl sed odio. Nulla nec vestibulum diam, quis ultricies turpis. Duis ultricies libero id massa volutpat, sodales ultrices purus commodo. Curabitur mollis hendrerit maximus. Curabitur blandit id mi quis maximus. Pellentesque nec arcu elementum justo elementum suscipit. Morbi lacinia at risus nec auctor. Nullam vehicula consequat molestie. Duis tristique enim eu sapien feugiat maximus a ac odio. Phasellus ullamcorper et odio suscipit pellentesque. Donec eget posuere dui. Nam feugiat, urna in molestie blandit, libero massa efficitur eros, ac tincidunt justo velit malesuada ex. Etiam vel interdum mauris. Morbi egestas vel purus quis efficitur. Nam quis ornare tellus, non blandit lacus.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jönköping University" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAZ-wh-iBf">
-                                <rect key="frame" x="208" y="100" width="160" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Softwaredevelopment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9L-7A-Qkg">
-                                <rect key="frame" x="208" y="123" width="168" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018 - On going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCz-9h-zPP">
-                                <rect key="frame" x="208" y="145" width="125" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Ca9-cV-1lt" firstAttribute="leading" secondItem="fpl-ru-jQG" secondAttribute="leading" constant="20" id="4TH-76-p3q"/>
-                            <constraint firstItem="10g-5e-NSY" firstAttribute="top" secondItem="Ca9-cV-1lt" secondAttribute="bottom" constant="10" id="5QB-gO-qK4"/>
-                            <constraint firstItem="fpl-ru-jQG" firstAttribute="trailing" secondItem="10g-5e-NSY" secondAttribute="trailing" constant="20" id="795-0H-3Bh"/>
-                            <constraint firstItem="MCz-9h-zPP" firstAttribute="leading" secondItem="Ca9-cV-1lt" secondAttribute="trailing" constant="8" id="7ex-DC-DDu"/>
-                            <constraint firstItem="RAZ-wh-iBf" firstAttribute="top" secondItem="fpl-ru-jQG" secondAttribute="top" constant="12" id="BHa-xi-ezF"/>
-                            <constraint firstItem="MCz-9h-zPP" firstAttribute="top" secondItem="W9L-7A-Qkg" secondAttribute="bottom" constant="1" id="EZ7-rY-73J"/>
-                            <constraint firstItem="W9L-7A-Qkg" firstAttribute="top" secondItem="RAZ-wh-iBf" secondAttribute="bottom" constant="1" id="Jg6-sj-MzC"/>
-                            <constraint firstItem="W9L-7A-Qkg" firstAttribute="leading" secondItem="Ca9-cV-1lt" secondAttribute="trailing" constant="8" id="Mg7-7h-lc8"/>
-                            <constraint firstItem="10g-5e-NSY" firstAttribute="bottom" secondItem="fpl-ru-jQG" secondAttribute="bottom" id="PkG-OG-pUZ"/>
-                            <constraint firstItem="10g-5e-NSY" firstAttribute="leading" secondItem="fpl-ru-jQG" secondAttribute="leading" constant="20" id="VdA-mw-Oxb"/>
-                            <constraint firstItem="Ca9-cV-1lt" firstAttribute="top" secondItem="p3b-mn-3fa" secondAttribute="topMargin" id="W7I-t8-fjn"/>
-                            <constraint firstItem="RAZ-wh-iBf" firstAttribute="leading" secondItem="Ca9-cV-1lt" secondAttribute="trailing" constant="8" id="Za6-SV-qsi"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="fpl-ru-jQG"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Jönköping University" id="44G-Ec-E3V"/>
-                    <connections>
-                        <outlet property="textView" destination="10g-5e-NSY" id="nnv-Kt-nrV"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nIY-tb-KPO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3686" y="135"/>
-        </scene>
-        <!--LBS-->
-        <scene sceneID="7bV-xX-E7X">
-            <objects>
-                <viewController id="lK4-8o-iBM" customClass="LBSViewController" customModule="iOS_Dev_Lab2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pgd-kg-skD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="K7M-cw-EiV">
-                                <rect key="frame" x="20" y="90" width="180" height="92.333333333333329"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="1wO-lX-wzo"/>
-                                    <constraint firstAttribute="height" constant="96" id="KER-34-5Wo"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ES1-aO-Npa">
-                                <rect key="frame" x="20" y="194" width="374" height="668"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget maximus ex. Pellentesque finibus scelerisque nulla, ac egestas mi tempus vitae. Maecenas iaculis ornare metus, eget hendrerit orci tempor et. Quisque quis porta diam. Integer rutrum, sapien et finibus posuere, tortor tortor blandit lectus, quis pellentesque eros mi ut libero. Donec arcu elit, feugiat a nulla eget, luctus mollis mauris. Donec nec viverra est. Maecenas sed nisl ullamcorper, malesuada ligula eu, placerat velit. Nulla leo est, hendrerit vel vehicula sed, scelerisque ut quam. Donec nulla metus, condimentum sed tellus vel, vulputate varius libero. Morbi sed eleifend metus. Pellentesque est augue, commodo egestas neque at, euismod ultrices dui. Aliquam erat volutpat. Donec et vehicula odio, et varius sapien. Morbi luctus eu tortor eget iaculis.
-
-Curabitur eget lacus aliquet, auctor justo pharetra, pulvinar orci. Aliquam quis libero nisl. Nunc in orci sit amet urna gravida porta. Ut efficitur augue at efficitur finibus. Nunc in volutpat odio, a viverra neque. Aenean massa nibh, maximus eget tincidunt vel, posuere a diam. Quisque semper pretium nibh at molestie. Duis rhoncus enim a vehicula tincidunt. Sed nisi dui, sollicitudin vitae velit at, molestie tincidunt arcu. Sed eget diam vitae nulla molestie ultricies. Phasellus nec gravida orci. Cras ac neque at felis volutpat sodales vel eget eros. Pellentesque maximus vitae arcu sed finibus.
-
-Praesent aliquet posuere bibendum. Quisque vitae tortor imperdiet felis laoreet efficitur. Integer nibh odio, blandit eu pretium in, faucibus in augue. Vestibulum non metus lobortis, rutrum urna sed, lobortis lectus. Curabitur nec metus erat. Integer est est, porta non interdum at, volutpat sed risus. In hac habitasse platea dictumst. Nulla consequat commodo enim non dignissim. Curabitur ac porta dui.
-
-Donec et est nec ipsum vestibulum sodales. Proin sed dui nec dui aliquam tristique in ut sem. Donec vel fermentum purus. Phasellus faucibus ultrices purus a ornare. Mauris in ante non lacus eleifend aliquet. Cras ultrices massa non dignissim tempor. Curabitur sed libero eu sem porttitor maximus. Proin turpis elit, vulputate vel leo eget, efficitur malesuada augue. Morbi at elementum eros. Maecenas gravida nisl ultrices consectetur consequat. Etiam ullamcorper purus dictum, tincidunt purus vulputate, maximus neque. Mauris ultrices elit eget sapien iaculis placerat at aliquam tellus. Nullam in tincidunt metus, nec imperdiet ipsum. Morbi nec porta elit, vel fermentum purus. Pellentesque arcu eros, eleifend eu dapibus non, euismod id nunc. Donec vestibulum lectus quis augue commodo porta.
-
-Aenean rhoncus, ex ac faucibus cursus, ex ante tristique erat, maximus rutrum mauris nisl sed odio. Nulla nec vestibulum diam, quis ultricies turpis. Duis ultricies libero id massa volutpat, sodales ultrices purus commodo. Curabitur mollis hendrerit maximus. Curabitur blandit id mi quis maximus. Pellentesque nec arcu elementum justo elementum suscipit. Morbi lacinia at risus nec auctor. Nullam vehicula consequat molestie. Duis tristique enim eu sapien feugiat maximus a ac odio. Phasellus ullamcorper et odio suscipit pellentesque. Donec eget posuere dui. Nam feugiat, urna in molestie blandit, libero massa efficitur eros, ac tincidunt justo velit malesuada ex. Etiam vel interdum mauris. Morbi egestas vel purus quis efficitur. Nam quis ornare tellus, non blandit lacus.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LBS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B32-he-Hm3">
-                                <rect key="frame" x="208" y="100" width="31" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gamedevelopment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEr-mH-eqK">
-                                <rect key="frame" x="208" y="123" width="145" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2013 - 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPr-pv-VP5">
-                                <rect key="frame" x="208" y="145" width="93" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="ES1-aO-Npa" firstAttribute="top" secondItem="K7M-cw-EiV" secondAttribute="bottom" constant="10" id="2CF-rk-rhO"/>
-                            <constraint firstItem="B32-he-Hm3" firstAttribute="top" secondItem="yTL-ii-BLz" secondAttribute="top" constant="12" id="AaQ-ns-xbG"/>
-                            <constraint firstItem="K7M-cw-EiV" firstAttribute="top" secondItem="pgd-kg-skD" secondAttribute="topMargin" id="CkA-jv-fGp"/>
-                            <constraint firstItem="oEr-mH-eqK" firstAttribute="leading" secondItem="K7M-cw-EiV" secondAttribute="trailing" constant="8" id="KR9-KE-xTM"/>
-                            <constraint firstItem="GPr-pv-VP5" firstAttribute="top" secondItem="oEr-mH-eqK" secondAttribute="bottom" constant="1" id="TX0-8S-0jb"/>
-                            <constraint firstItem="ES1-aO-Npa" firstAttribute="leading" secondItem="yTL-ii-BLz" secondAttribute="leading" constant="20" id="d6N-4n-iol"/>
-                            <constraint firstItem="ES1-aO-Npa" firstAttribute="bottom" secondItem="yTL-ii-BLz" secondAttribute="bottom" id="h7e-cn-Uuc"/>
-                            <constraint firstItem="oEr-mH-eqK" firstAttribute="top" secondItem="B32-he-Hm3" secondAttribute="bottom" constant="1" id="hfJ-fu-xqA"/>
-                            <constraint firstItem="GPr-pv-VP5" firstAttribute="leading" secondItem="K7M-cw-EiV" secondAttribute="trailing" constant="8" id="k9A-5f-Th0"/>
-                            <constraint firstItem="B32-he-Hm3" firstAttribute="leading" secondItem="K7M-cw-EiV" secondAttribute="trailing" constant="8" id="mVq-Ej-EYJ"/>
-                            <constraint firstItem="K7M-cw-EiV" firstAttribute="leading" secondItem="yTL-ii-BLz" secondAttribute="leading" constant="20" id="u6C-g4-5jM"/>
-                            <constraint firstItem="yTL-ii-BLz" firstAttribute="trailing" secondItem="ES1-aO-Npa" secondAttribute="trailing" constant="20" id="zVh-hh-P6E"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="yTL-ii-BLz"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="LBS" id="FDC-Po-mYx"/>
-                    <connections>
-                        <outlet property="textView" destination="ES1-aO-Npa" id="wK5-rn-M5t"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JWK-pH-6b5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3686" y="850"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="airplane" catalog="system" width="64" height="56"/>
-        <image name="book" catalog="system" width="64" height="50"/>
-        <image name="book.fill" catalog="system" width="64" height="50"/>
-        <image name="gamecontroller" catalog="system" width="64" height="40"/>
-        <image name="gamecontroller.fill" catalog="system" width="64" height="40"/>
         <image name="person.crop.square.fill" catalog="system" width="64" height="56"/>
-        <image name="tray" catalog="system" width="64" height="44"/>
-        <image name="tray.fill" catalog="system" width="64" height="44"/>
     </resources>
 </document>
