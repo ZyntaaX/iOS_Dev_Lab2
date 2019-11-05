@@ -9,20 +9,7 @@
 import UIKit
 
 class ExperienceTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var imageName: UIImageView!
+    @IBOutlet weak var workImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

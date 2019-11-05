@@ -2,23 +2,24 @@
 //  Work.swift
 //  iOS_Dev_Lab2
 //
-//  Created by Rasmus Svanberg on 2019-11-04.
+//  Created by user162693 on 2019-11-05.
 //  Copyright © 2019 RasmusSvanberg. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Work {
-    let imageName: String
+    let image: UIImage
     let workName: String
-    let workStartYear: Int
-    let workEndYear: Int
+    let workStartYear: String
+    let workEndYear: String
+    let workDescription: String
     
-    init(imageName: String = "default", workName: String, workStartYear: Int, workEndYear: Int) {
-        self.imageName = imageName
+    init(image: UIImage, workName: String, workStartYear: String, workEndYear: String, workDescription: String = "No Description") {
+        self.image = image
         self.workName = workName
         self.workStartYear = workStartYear
         self.workEndYear = workEndYear
+        self.workDescription = workDescription
     }
-
 }
