@@ -14,12 +14,12 @@ class ExperienceViewController: UITableViewController {
 
     var projects = [
         [   //Work
-            Work(image: #imageLiteral(resourceName: "9"), workName: "Kitron", workStartYear: "2017", workEndYear: "Ongoing", workDescription: "Worked as an electronics assembler, at Kardex Remstar warehouse-towers and the service department.\n\nBest job I've had this far!"),
-            Work(image: #imageLiteral(resourceName: "10"), workName: "Isakssons", workStartYear: "2016", workEndYear: "2017", workDescription: "Worked as a CNC-operator at Isakssons Metallindustri in Hok, sweden.\n\nI worked here for about half a year before quitting as this was not a job for me.")
+            Work(image: #imageLiteral(resourceName: "kitron"), workName: "Kitron", workStartYear: "2017", workEndYear: "Ongoing", workDescription: "Worked as an electronics assembler, at Kardex Remstar warehouse-towers and the service department.\n\nBest job I've had this far!"),
+            Work(image: #imageLiteral(resourceName: "isakssons"), workName: "Isakssons", workStartYear: "2016", workEndYear: "2017", workDescription: "Worked as a CNC-operator at Isakssons Metallindustri in Hok, sweden.\n\nI worked here for about half a year before quitting as this was not a job for me.")
         ],
         [   //Education
-            Work(image: #imageLiteral(resourceName: "7"), workName: "JU", workStartYear: "2018", workEndYear: "Ongoing", workDescription: "Currently doing my second year at Jönköping University studying Software development and mobile platforms.\n\nIt is very fun!"),
-            Work(image: #imageLiteral(resourceName: "5"), workName: "LBS", workStartYear: "2013", workEndYear: "2016", workDescription: "Studied game development for 3 years, where we mainly learned C#, some Unity3D, Autocad Maya etc.\n\nProud developer of the fighting game 'Bonkey-Monkey the Bitch Hunter!'")
+            Work(image: #imageLiteral(resourceName: "ju"), workName: "JU", workStartYear: "2018", workEndYear: "Ongoing", workDescription: "Currently doing my second year at Jönköping University studying Software development and mobile platforms.\n\nIt is very fun!"),
+            Work(image: #imageLiteral(resourceName: "lbs"), workName: "LBS", workStartYear: "2013", workEndYear: "2016", workDescription: "Studied game development for 3 years, where we mainly learned C#, some Unity3D, Autocad Maya etc.\n\nProud developer of the fighting game 'Bonkey-Monkey the Bitch Hunter!'")
         ]
     ]
     
