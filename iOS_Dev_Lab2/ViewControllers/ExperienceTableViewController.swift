@@ -10,6 +10,9 @@ import UIKit
 
 class ExperienceViewController: UITableViewController {
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
+    
     var sections = ["Work", "Education"]
 
     var projects = [
@@ -19,7 +22,7 @@ class ExperienceViewController: UITableViewController {
         ],
         [   //Education
             Work(image: #imageLiteral(resourceName: "ju"), workName: "JU", workStartYear: "2018", workEndYear: "Ongoing", workDescription: "Currently doing my second year at Jönköping University studying Software development and mobile platforms.\n\nIt is very fun!"),
-            Work(image: #imageLiteral(resourceName: "lbs"), workName: "LBS", workStartYear: "2013", workEndYear: "2016", workDescription: "Studied game development for 3 years, where we mainly learned C#, some Unity3D, Autocad Maya etc.\n\nProud developer of the fighting game 'Bonkey-Monkey the Bitch Hunter!'")
+            Work(image: #imageLiteral(resourceName: "lbs"), workName: "LBS", workStartYear: "2013", workEndYear: "2016", workDescription: "Studied game development for 3 years, where we mainly learned C#, some Unity3D, Autodesk Maya etc.\n\nProud developer of the fighting game 'Bonkey-Monkey the Bitch Hunter!' (no official release was made).")
         ]
     ]
     

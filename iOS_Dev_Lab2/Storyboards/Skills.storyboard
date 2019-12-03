@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tTV-4H-rYy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Skills View Controller-->
+        <scene sceneID="0Xy-rD-7Xl">
+            <objects>
+                <viewController id="tTV-4H-rYy" customClass="SkillsViewController" customModule="iOS_Dev_Lab2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r8I-CJ-Ee4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQo-FQ-hBh">
+                                <rect key="frame" x="359" y="64" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="tTV-4H-rYy" eventType="touchUpInside" id="36x-bE-z1F"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQg-wV-tAr">
+                                <rect key="frame" x="182" y="423" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lQg-wV-tAr" secondAttribute="height" multiplier="1:1" id="im7-14-rTA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lQg-wV-tAr" firstAttribute="centerX" secondItem="r8I-CJ-Ee4" secondAttribute="centerX" id="0XH-pA-dST"/>
+                            <constraint firstItem="lQg-wV-tAr" firstAttribute="centerY" secondItem="r8I-CJ-Ee4" secondAttribute="centerY" identifier="yConstraint" id="8tT-Zu-Crs"/>
+                            <constraint firstItem="lQg-wV-tAr" firstAttribute="width" secondItem="qUo-SJ-7RO" secondAttribute="width" multiplier="0.120773" id="dLu-bu-Iss"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qUo-SJ-7RO"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="BQo-FQ-hBh" id="WEq-rA-O2X"/>
+                        <outlet property="myView" destination="lQg-wV-tAr" id="kOi-QF-q6f"/>
+                        <outlet property="yConstraint" destination="8tT-Zu-Crs" id="VKQ-br-P7h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPM-7o-3eS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="125"/>
+        </scene>
+    </scenes>
+</document>
