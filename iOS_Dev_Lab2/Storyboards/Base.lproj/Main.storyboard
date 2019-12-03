@@ -133,7 +133,7 @@ CQk
         <scene sceneID="z12-A9-Tfc">
             <objects>
                 <tableViewController id="Uh6-m3-uY2" customClass="ExperienceViewController" customModule="iOS_Dev_Lab2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="USa-T5-WbR" userLabel="UITableView">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="USa-T5-WbR" userLabel="UITableView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -141,42 +141,45 @@ CQk
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UITableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" rowHeight="105" id="Kxl-NF-mvc" userLabel="UITableViewCell" customClass="ExperienceTableViewCell" customModule="iOS_Dev_Lab2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kxl-NF-mvc" id="qWD-Bi-wTv">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kxl-NF-mvc" id="qWD-Bi-wTv">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qT3-qw-Tv1">
-                                            <rect key="frame" x="20" y="11" width="105" height="83"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitron" translatesAutoresizingMaskIntoConstraints="NO" id="qT3-qw-Tv1">
+                                            <rect key="frame" x="20" y="11" width="100" height="83"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="105" id="Uyz-mf-aX6"/>
+                                                <constraint firstAttribute="width" constant="100" id="qCP-we-OvO"/>
+                                                <constraint firstAttribute="height" constant="80" id="t2e-ty-TRd"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="titleLabel" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvE-cG-gdK">
-                                            <rect key="frame" x="145" y="21" width="249" height="22"/>
+                                            <rect key="frame" x="140" y="21" width="254" height="22"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="durationLabel" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAW-5Z-GhG">
-                                            <rect key="frame" x="145" y="58" width="249" height="21"/>
+                                            <rect key="frame" x="140" y="58" width="254" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="qT3-qw-Tv1" firstAttribute="bottom" secondItem="qWD-Bi-wTv" secondAttribute="bottomMargin" id="2he-Eh-tSs"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="EAW-5Z-GhG" secondAttribute="trailing" id="BAI-Gv-UeE"/>
-                                        <constraint firstItem="EAW-5Z-GhG" firstAttribute="leading" secondItem="qT3-qw-Tv1" secondAttribute="trailing" constant="20" id="I6d-7b-V2d"/>
-                                        <constraint firstItem="qT3-qw-Tv1" firstAttribute="top" secondItem="qWD-Bi-wTv" secondAttribute="topMargin" id="aH9-ep-HOk"/>
-                                        <constraint firstItem="dvE-cG-gdK" firstAttribute="leading" secondItem="qT3-qw-Tv1" secondAttribute="trailing" constant="20" id="fBq-WP-21w"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="dvE-cG-gdK" secondAttribute="trailing" id="hg5-WA-9DI"/>
-                                        <constraint firstItem="dvE-cG-gdK" firstAttribute="top" secondItem="qWD-Bi-wTv" secondAttribute="topMargin" constant="10" id="i07-5B-tla"/>
-                                        <constraint firstItem="qT3-qw-Tv1" firstAttribute="leading" secondItem="qWD-Bi-wTv" secondAttribute="leadingMargin" id="iNd-aR-132"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="EAW-5Z-GhG" secondAttribute="bottom" constant="15" id="rxP-MN-3CY"/>
+                                        <constraint firstItem="dvE-cG-gdK" firstAttribute="trailing" secondItem="qWD-Bi-wTv" secondAttribute="trailingMargin" id="MMK-BD-Yl9"/>
+                                        <constraint firstItem="EAW-5Z-GhG" firstAttribute="leading" secondItem="qT3-qw-Tv1" secondAttribute="trailing" constant="20" id="S2w-QL-cdD"/>
+                                        <constraint firstItem="dvE-cG-gdK" firstAttribute="top" secondItem="qWD-Bi-wTv" secondAttribute="topMargin" constant="10" id="S4C-nA-rtz"/>
+                                        <constraint firstItem="dvE-cG-gdK" firstAttribute="leading" secondItem="qT3-qw-Tv1" secondAttribute="trailing" constant="20" id="avq-zK-k4L"/>
+                                        <constraint firstItem="qT3-qw-Tv1" firstAttribute="leading" secondItem="qWD-Bi-wTv" secondAttribute="leadingMargin" id="cBy-9d-UM6"/>
+                                        <constraint firstItem="qT3-qw-Tv1" firstAttribute="top" secondItem="qWD-Bi-wTv" secondAttribute="topMargin" id="dw4-j2-CFC"/>
+                                        <constraint firstItem="EAW-5Z-GhG" firstAttribute="trailing" secondItem="qWD-Bi-wTv" secondAttribute="trailingMargin" id="hig-nk-NZp"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="EAW-5Z-GhG" secondAttribute="bottom" constant="15" id="qGl-An-UaV"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="qT3-qw-Tv1" secondAttribute="bottom" id="tpk-Zg-yA3"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="durationLabel" destination="EAW-5Z-GhG" id="87a-gQ-dnj"/>
+                                    <outlet property="titleLabel" destination="dvE-cG-gdK" id="at5-py-gd0"/>
                                     <outlet property="workImage" destination="qT3-qw-Tv1" id="e2c-rM-Kha"/>
                                     <segue destination="NDt-7y-kPX" kind="show" identifier="showDetailView" trigger="accessoryAction" id="6ma-lY-Ntv"/>
                                 </connections>
@@ -276,6 +279,7 @@ CQk
         </scene>
     </scenes>
     <resources>
+        <image name="kitron" width="3733" height="2084"/>
         <image name="person.crop.square.fill" catalog="system" width="64" height="56"/>
     </resources>
 </document>
