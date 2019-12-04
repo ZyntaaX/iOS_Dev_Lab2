@@ -12,4 +12,5 @@ class ExperienceTableViewCell: UITableViewCell {
     @IBOutlet weak var workImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var cellMainView: UIView!
 }

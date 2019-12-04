@@ -49,6 +49,9 @@ class ExperienceViewController: UITableViewController {
         cell.workImage.image = projects[indexPath.section][indexPath.row].image
         cell.titleLabel.text = projects[indexPath.section][indexPath.row].workName
         cell.durationLabel.text = "\(projects[indexPath.section][indexPath.row].workStartYear) - \(projects[indexPath.section][indexPath.row].workEndYear)"
+        
+        cell.cellMainView.layer.cornerRadius = 10
+        
         return cell
     }
     

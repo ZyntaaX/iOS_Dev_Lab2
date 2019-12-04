@@ -11,11 +11,16 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var presentationTextArea: UITextView!
+    @IBOutlet weak var experienceButton: UIButton!
+    @IBOutlet weak var skillsButton: UIButton!
     
     override func viewDidLoad() {
         presentationTextArea.isEditable = false
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        experienceButton.layer.cornerRadius = 15
+        skillsButton.layer.cornerRadius = 15
         
 
     }
