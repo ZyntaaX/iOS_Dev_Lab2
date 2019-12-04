@@ -22,7 +22,12 @@ class ViewController: UIViewController {
         experienceButton.layer.cornerRadius = 15
         skillsButton.layer.cornerRadius = 15
         
-
+        experienceButton.layer.shadowOpacity = 0.2
+        experienceButton.layer.shadowRadius = 8
+        experienceButton.layer.shadowOffset.height = 5
+        skillsButton.layer.shadowOpacity = 0.2
+        skillsButton.layer.shadowRadius = 8
+        skillsButton.layer.shadowOffset.height = 5
     }
     @IBAction func skillsButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "skillsSegue", sender: self)

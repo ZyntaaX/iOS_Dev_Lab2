@@ -54,8 +54,10 @@ class SkillsViewController: UIViewController {
             }
             
             UIView.addKeyframe(withRelativeStartTime: 0.3, relativeDuration: 0.3) {
-                //self.myView.transform = CGAffineTransform(rotationAngle: CGFloat.pi).concatenating(CGAffineTransform(scaleX: 2, y: 2))
                 self.myView.layer.cornerRadius = 0
+                self.myView.layer.shadowOffset.height = 10
+                self.myView.layer.shadowRadius = 20
+                self.myView.layer.shadowOpacity = 0.8
             }
             
             UIView.addKeyframe(withRelativeStartTime: 0.6, relativeDuration: 0.2) {

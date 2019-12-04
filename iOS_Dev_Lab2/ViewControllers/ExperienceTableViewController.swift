@@ -51,6 +51,9 @@ class ExperienceViewController: UITableViewController {
         cell.durationLabel.text = "\(projects[indexPath.section][indexPath.row].workStartYear) - \(projects[indexPath.section][indexPath.row].workEndYear)"
         
         cell.cellMainView.layer.cornerRadius = 10
+        cell.cellMainView.layer.shadowOpacity = 0.2
+        cell.cellMainView.layer.shadowRadius = 8
+        cell.cellMainView.layer.shadowOffset.height = 5
         
         return cell
     }
